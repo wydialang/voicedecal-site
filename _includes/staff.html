@@ -1,0 +1,22 @@
+{%- comment -%}
+  Facilitator profile cards, from _data/staff.yml.
+  Odd cards have the photo on the left, even cards on the right (CSS,
+  _sass/custom/custom.scss). On narrow screens they stack.
+{%- endcomment -%}
+<div class="facilitators">
+{%- for f in site.data.staff.facilitators %}
+<div class="facilitator">
+<img class="facilitator-photo" src="{{ '/assets/images/' | append: f.photo | relative_url }}" alt="{{ f.name }}" width="140" height="140" loading="lazy">
+<div class="facilitator-body">
+<h3 id="{{ f.name | slugify }}">{{ f.name }}</h3>
+{{ f.bio | markdownify }}
+{%- if f.contact %}
+  {%- assign c = f.contact | strip -%}
+  {%- assign is_email = false -%}
+  {%- if c contains "@" -%}{%- unless c contains " " or c contains "[" -%}{%- assign is_email = true -%}{%- endunless -%}{%- endif -%}
+<p class="facilitator-contact"><strong>Contact:</strong> {% if is_email %}<a href="mailto:{{ c }}">{{ c }}</a>{% else %}{{ c | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}</p>
+{%- endif %}
+</div>
+</div>
+{%- endfor %}
+</div>

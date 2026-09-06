@@ -1,0 +1,25 @@
+# =============================================================================
+#  Facilitators — the profile cards on the Staff page are generated from this.
+#  They alternate photo-left / photo-right automatically, in the order listed.
+#
+#  One block each:
+#    - name:     shown as the heading
+#      photo:    a file in assets/images/  (square works best; it's cropped to a square)
+#      bio:      a short paragraph — Markdown is allowed (*italics*, [links](url))
+#      contact:  optional — a bare email becomes a mailto link; otherwise
+#                Markdown, e.g. "**@handle** on Discord"
+# =============================================================================
+
+facilitators:
+  - name: lydia wang
+    photo: tetomuni.png
+    bio: >
+      hi! i'm a computer science, cognitive science and linguistics major
+      entering my *n*th year at cal. I started the decal a semester ago and
+      I'm super excited to be teaching it again ! !
+    contact: "lydiaywang+voicedecal@berkeley.edu"
+
+  - name: Placeholder Facilitator Two
+    photo: staff-placeholder.svg
+    bio: "Placeholder: year and major. A sentence or two about their background and what they're excited to teach."
+    contact: "**@handle** on Discord"

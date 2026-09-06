@@ -1,0 +1,15 @@
+# Announcements shown on the home page, newest first.
+#
+# The whole section is turned ON/OFF by `announcements_enabled` in _config.yml.
+# It is currently OFF. To use it: set that to true, then add entries here.
+# Each entry needs a `date` (any short text) and a `body` (Markdown is allowed,
+# including links). In the body, %syllabus% and %discord% expand to the URLs
+# set in _config.yml. Commit the file and the site rebuilds.
+#
+# Example entries (edit or delete these):
+
+- date: "Sep 2"
+  body: "Welcome to the course! The website is live — check the [Weekly Schedule](schedule) for meeting times."
+
+- date: "Aug 25"
+  body: "Enrollment is open. Fill out the interest form linked in the [syllabus](%syllabus%)."

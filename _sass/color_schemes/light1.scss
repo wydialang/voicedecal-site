@@ -1,0 +1,15 @@
+// ===========================================================================
+//  Theme set 1 — LIGHT   ("Teal")
+// ===========================================================================
+
+// $primary drives links and buttons. Keep its contrast on white >= 4.5:1
+// (check at https://webaim.org/resources/contrastchecker/).
+
+$primary: #0f766e;   // teal-700  (~4.9:1 on white)
+$secondary: #5eead4;  // teal-300, used for the hover tint
+
+$link-color: $primary;
+$btn-primary-color: $primary;
+
+
+$feedback-color: mix($primary, $sidebar-color, 12%);

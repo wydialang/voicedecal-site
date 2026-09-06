@@ -1,0 +1,17 @@
+{%- comment -%}
+  Home-page announcements block. Renders nothing unless BOTH:
+    - site.announcements_enabled is true  (set in _config.yml), and
+    - _data/announcements.yml has at least one entry.
+  Drop `{% include announcements.html %}` on any page to show it there.
+  In an entry's `body`, %syllabus% / %discord% expand to those URLs.
+{%- endcomment -%}
+{%- if site.announcements_enabled and site.data.announcements and site.data.announcements.size > 0 -%}
+<section class="announcements" aria-labelledby="announcements-heading" markdown="0">
+  <h2 id="announcements-heading">Announcements</h2>
+  <ul>
+    {%- for item in site.data.announcements %}
+    <li><strong>[{{ item.date }}]</strong> {{ item.body | replace: '%syllabus%', site.syllabus_url | replace: '%discord%', site.discord_url | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif -%}

@@ -1,0 +1,38 @@
+{%- comment -%}
+  Renders the course-schedule table from _data/schedule.yml.
+  Resource items are "label | https://url" (a link) or plain text.
+  `current_week` in _config.yml controls the "Skip to current week" anchor
+  and which row is highlighted.
+{%- endcomment -%}
+<table class="course-calendar">
+<thead>
+<tr><th>Wk</th><th>Date</th><th>Topic</th><th>Assignment</th><th>Supplemental Readings</th></tr>
+</thead>
+<tbody>
+{%- for wk in site.data.schedule %}
+<tr{% if wk.week == site.current_week %} class="is-current"{% endif %}>
+<td>{% if wk.week == site.current_week %}<span id="week-1"></span>{% endif %}{{ wk.week }}</td>
+<td>{{ wk.date }}</td>
+<td><strong>{{ wk.topic }}</strong>
+{%- if wk.points %}<ul>{% for p in wk.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif -%}
+</td>
+<td>
+{%- if wk.assignment -%}
+  {%- for a in wk.assignment %}{{ a }}{% unless forloop.last %}<br>{% endunless %}{% endfor -%}
+{%- else -%}&mdash;{%- endif -%}
+</td>
+<td>
+{%- if wk.resources -%}
+  {%- for r in wk.resources -%}
+    {%- assign bits = r | split: " | " -%}
+    {%- if bits.size > 1 -%}
+      <a href="{{ bits[1] | strip }}" target="_blank" rel="noopener">{{ bits[0] | strip }}</a>
+    {%- else -%}{{ r }}{%- endif -%}
+    {%- unless forloop.last %}<br>{% endunless -%}
+  {%- endfor -%}
+{%- else -%}&mdash;{%- endif -%}
+</td>
+</tr>
+{%- endfor %}
+</tbody>
+</table>

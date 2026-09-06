@@ -1,0 +1,303 @@
+// Site-specific style tweaks. Just the Docs compiles this file once per color
+// scheme, AFTER that scheme's variables, so rules here can use scheme variables
+// and per-theme overrides.
+//
+// ---------------------------------------------------------------------------
+//  Themeable knobs. Each color scheme file (_sass/color_schemes/lightN.scss,
+//  darkN.scss) may override any of these; the `!default` below is the fallback
+//  used by any scheme that doesn't.
+// ---------------------------------------------------------------------------
+
+// Accent used by the top-bar light/dark toggle button.
+$ui-accent: $link-color !default;
+
+// "Secondary" buttons — a .btn without .btn-primary / .btn-outline,
+// e.g. the "Join the Discord" button.
+$btn-secondary-color: $link-color !default;        // text, resting
+$btn-secondary-hover-bg: mix($link-color, $base-button-color, 6%) !default; // background, hover
+$btn-secondary-hover-color: $link-color !default;  // text, hover
+
+// Accent for the header row of the course-calendar table on the home page
+// (the table tagged {: .course-calendar } in index.md).
+$table-header-accent: null !default;
+$table-header-accent-text: $body-heading-color !default;
+
+// Sidebar logo, per theme.
+$logo-name: "voicedecallogo" !default;
+
+// Minimal string replace, used for the logo swap.
+@function str-replace($string, $search, $replace: "") {
+  $i: str-index($string, $search);
+  @if $i {
+    @return str-slice($string, 1, $i - 1) + $replace +
+      str-replace(str-slice($string, $i + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+// ---------------------------------------------------------------------------
+//  Sidebar header: logo + "Voice DeCal" text side by side
+//  (see _includes/title.html, which adds the text next to the logo)
+// ---------------------------------------------------------------------------
+.site-title {
+  gap: 0.5rem;
+
+  .site-logo {
+    display: block;
+    flex: 0 0 auto;
+    width: 1.85rem;      // the logo art is portrait (~2:3)
+    height: 2.75rem;
+    background-position: center;
+
+    @if variable-exists(logo) and $logo-name != "voicedecallogo" {
+      background-image: url(str-replace($logo, "voicedecallogo", $logo-name));
+    }
+  }
+
+  .site-title-names {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .site-title-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: $body-heading-color;
+  }
+
+  .site-title-semester {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: $body-text-color;
+    opacity: 0.7;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Home-page hero image. Transparent PNG, floated
+//  alongside the course description
+// ---------------------------------------------------------------------------
+.home-hero {
+  float: right;
+  width: auto;
+  max-width: 38%;
+  max-height: 17rem;
+  margin: 0 0 0.5rem 1.5rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media (max-width: 50rem) {
+  .home-hero {
+    float: none;
+    display: block;
+    max-width: 62%;
+    max-height: 14rem;
+    margin: 0 auto 1rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Light / dark mode toggle button (top bar)
+// ---------------------------------------------------------------------------
+.theme-toggle {
+  align-self: center;
+  margin: 0 0.5rem 0 auto; // push it to the right, next to the aux links
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  color: $ui-accent;
+  background-color: mix($ui-accent, $body-background-color, 8%);
+  border: 1px solid $ui-accent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: mix($ui-accent, $body-background-color, 18%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $ui-accent;
+    outline-offset: 1px;
+  }
+}
+
+@media (max-width: 50rem) {
+  // keep the toggle from crowding the search
+  .theme-toggle {
+    margin-left: 0.5rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Secondary buttons (.btn that isn't primary or outline)
+// ---------------------------------------------------------------------------
+.btn:not(.btn-primary):not(.btn-outline) {
+  color: $btn-secondary-color;
+
+  &:hover,
+  &:active,
+  &.zeroclipboard-is-hover,
+  &.zeroclipboard-is-active {
+    color: $btn-secondary-hover-color;
+    background-color: $btn-secondary-hover-bg;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Course-calendar table header row (home page)
+// ---------------------------------------------------------------------------
+@if $table-header-accent {
+  .main-content .course-calendar thead th {
+    background-color: $table-header-accent;
+    color: $table-header-accent-text;
+    border-bottom-color: $table-header-accent;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Home-page announcements block
+// ---------------------------------------------------------------------------
+.announcements {
+  margin-bottom: 2rem;
+
+  ul {
+    margin-top: 0.5rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Embedded iframes (Google Calendar, etc.)
+// ---------------------------------------------------------------------------
+.responsive-embed {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+
+  iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 480px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Course-schedule table (home page, tagged {: .course-calendar })
+//  Narrow Week/Date columns, a wide Topic column.
+// ---------------------------------------------------------------------------
+.course-calendar {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 45rem; // narrower than this, the table scrolls sideways
+
+  th,
+  td {
+    min-width: 0;
+    padding: 0.4rem 0.6rem;
+    vertical-align: top;
+  }
+
+  // Wk | Date | Topic | Assignment | Supplemental Readings
+  th:nth-child(1) { width: 5%; }
+  th:nth-child(2) { width: 8%; }
+  th:nth-child(3) { width: 45%; } // Topic
+  th:nth-child(4) { width: 19.5%; }
+  th:nth-child(5) { width: 22.5%; }
+
+  // Wk / Date stay on one line; the wordy columns may break long words / URLs
+  th:nth-child(-n + 2),
+  td:nth-child(-n + 2) { white-space: nowrap; }
+
+  th:nth-child(n + 3),
+  td:nth-child(n + 3) { overflow-wrap: break-word; }
+
+  // bullet list under the topic heading (the theme hides list markers by
+  // default, so put them back)
+  ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.15rem;
+    list-style: disc outside;
+  }
+
+  li {
+    margin: 0.15rem 0;
+    list-style: inherit;
+  }
+
+  // the current week (current_week in _config.yml)
+  tr.is-current > td {
+    background-color: rgba($feedback-color, 0.6);
+    box-shadow: inset 3px 0 0 $link-color;
+  }
+}
+
+// ---------------------------------------------------------------------------
+//  Facilitator profile cards (Staff page) — _includes/staff.html from
+//  _data/staff.yml. Photo left / right, alternating; stacked on small screens.
+// ---------------------------------------------------------------------------
+.facilitators {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.facilitator {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.facilitator-photo {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
+
+.facilitator-body {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.facilitator-contact {
+  margin-top: 0.6rem;
+  font-size: 0.9em;
+}
+
+@media (max-width: 40rem) {
+  .facilitator,
+  .facilitator:nth-child(even) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

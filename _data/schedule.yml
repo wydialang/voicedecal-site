@@ -1,0 +1,174 @@
+# =============================================================================
+#  Course schedule — the table on the home page is generated from this file.
+#
+#  One block per week (indent with 2 spaces, keep the "- " on the first line):
+#
+#    - week: 7                     week number (shown in the "Wk" column)
+#      date: "10/26"               keep the quotes
+#      topic: Voice Modulation II  the bold heading in the Topic column
+#      points:                     bullet list under the heading (optional)
+#        - Distortion
+#        - False chords
+#      assignment:                 one line per item
+#        - Storytelling exercise
+#      resources:                  one line per item
+#        - Real-time spectrogram | https://spec.sumianvoice.com/   <- "label | url"
+#        - TBD                                                      <- plain text
+#
+#  Which week "Skip to current week" jumps to (and highlights) is set by
+#  `current_week` in _config.yml.
+# =============================================================================
+
+- week: 1
+  date: "9/14"
+  topic: Introduction to Voice
+  points:
+    - Course policies and vocal goals
+    - Intro to voice
+    - Vocal warm-ups and vocal health
+  assignment:
+    - Describing your voice
+  resources:
+    - NHS SOVTEs Guide | https://www.cuh.nhs.uk/patient-information/semi-occluded-vocal-tract-exercises/
+
+- week: 2
+  date: "9/21"
+  topic: Anatomy Basics
+  points:
+    - Vocal tract anatomy
+    - Phonation types and vocal qualities
+    - Articulation basics
+  assignment:
+    - "Anatomy self-observation exercises (breathing, laryngeal position, articulation)"
+  resources:
+    - larynx 2D diagrams | https://www.getbodysmart.com/larynx/
+    - larynx 3D model | https://sketchfab.com/3d-models/anatomy-of-the-larynx-a00bc73a303c46248db6a13a88b23404
+    - NIH voice and speech overview | https://www.youtube.com/watch?v=JF8rlKuSoFM
+    - Pink Trombone | https://dood.al/pinktrombone/
+
+- week: 3
+  date: "9/28"
+  topic: Intro to Vocal Acoustics
+  points:
+    - Sound waves, DSP
+    - Source-filter theory
+    - Spectrograms!
+    - Demos in Braat, Praat and DAW
+  assignment:
+    - Acoustic analysis practice
+  resources:
+    - Vocal Harmonics & Formants | http://www.voicescienceworks.org/harmonics-vs-formants.html
+    - Daniel Russel's Acoustics Animations | https://www.acs.psu.edu/drussell/demos.html
+    - Real-time spectrogram | https://spec.sumianvoice.com/
+    - Braat | https://braat.app/practice
+    - Takayuki Arai - Vocal Models | https://www.youtube.com/watch?v=-SgCGwFMbD8
+
+- week: 4
+  date: "10/5"
+  topic: Vocal Acoustics, Perceptual Qualities and Gender
+  points:
+    - "Acoustics cont. (open quotient, spectral rolloff)"
+    - Perceptual qualities
+    - Perceptual quadrant and vocal gender
+    - "Slides, SDBD/BDSD, articulation"
+  assignment:
+    - "Pitch and weight exercises (PIP, SDBD/BDSD, whisper and vowel slides)"
+    - 'Resonance exercises ("hello" exercise, word chart)'
+  resources:
+    - Filtered Listening | http://www.voicescienceworks.org/filtered-listening-and-vocal-regions.html
+    - Acoustic Gender Space Viewer | https://acousticgender.space/
+    - UCLA Phonetics Lab Data | https://www.phonetics.ucla.edu/
+
+- week: 5
+  date: "10/12"
+  topic: Sociolinguistics of Voice
+  points:
+    - "Vocal gender cont. (gendered speech traits)"
+    - Speaker identity
+    - "Accents, dialects, social judgments"
+  assignment:
+    - Accent and articulation exercise
+  resources:
+    - International Dialects of English Archive | https://www.dialectsarchive.com/
+    - Speech Accent Archive (By Region) | https://accent.gmu.edu/browse_atlas.php
+    - 'Tom Scott: "Why are adverts so loud?" | https://youtu.be/Is_wu0VRIqQ?si=KZZ-bzHqpCfRqJyM'
+    - glaswegian accent | https://www.youtube.com/watch?v=AXGP4Sez_Us
+
+- week: 6
+  date: "10/19"
+  topic: Voice Modulation and Voicing Characters
+  points:
+    - "Characterization, pacing and coloring"
+    - Improv game
+    - "Different applications: narration, video games"
+  assignment:
+    - Character study/imitation
+  resources:
+    - Voice Acting (Fantasy Script Samples) | https://krcooley.wordpress.com/2019/03/12/voice-acting-fantasy-script-samples-1/
+    - Voice reel scripts | https://www.voicereels.com/scripts/
+    - Fox in Socks warm up | https://barlowsprimary.co.uk/wp-content/uploads/2020/06/Yr2-Fox-in-Socks-Lyrics-by-Dr-Seuss.pdf
+
+- week: 7
+  date: "10/26"
+  topic: Voice Modulation II
+  points:
+    - Distortion
+    - False chords
+    - Epiglottal growl
+    - Fry
+  assignment:
+    - Storytelling exercise
+  resources:
+    - TBD
+
+- week: 8
+  date: "11/2"
+  topic: Vocal Performance & Editing Workshop
+  points:
+    - "Different applications: narration, video games"
+    - Audio and editing setup
+    - Demo reels
+  assignment:
+    - Practice with editing software
+  resources:
+    - voicereels.com/scripts | https://www.voicereels.com/scripts/
+
+- week: 9
+  date: "11/9"
+  topic: Voice in Tech
+  points:
+    - Speech synthesis
+    - Biometric technology
+    - Vocaloid
+  assignment:
+    - Short written assignment
+  resources:
+    - 'Synthet: "the sound that everyone loves" | https://www.youtube.com/watch?v=KwdS01evoLk'
+
+- week: 10
+  date: "11/16"
+  topic: Guest Lecture
+  points:
+    - "Focus: industry, voice acting"
+  assignment:
+    - Final project released
+
+- week: 11
+  date: "11/23"
+  topic: Guest Lecture
+  points:
+    - "Focus: vocal health, vocal gender, voice training"
+  assignment:
+    - Work on final project!
+  resources:
+    - Voice Disorders Simulations | https://slpsims.csd.wisc.edu/simulations.html
+    - adult pharynx 3D models | https://www.visiblebody.com/blog/anatomy-and-physiology-the-pharynx-and-epiglottis
+    - infant pharynx 3D model | https://www.mdpi.com/2694-2526/48/1/4
+
+- week: 12
+  date: "11/30"
+  topic: Lab Tour or Guest Lecture
+  points:
+    - "Focus: voice research"
+  assignment:
+    - Work on final project!

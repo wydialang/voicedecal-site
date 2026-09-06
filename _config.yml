@@ -1,0 +1,139 @@
+# =============================================================================
+#  Voice DeCal — site configuration
+#
+#  Three parts:
+#    1. EDIT EACH SEMESTER/WEEK  — course links, semester name
+#    2. SET ONCE            — publishing / branding, changed rarely
+#    3. SITE MACHINERY      — theme + build settings, leave alone
+#
+# =============================================================================
+
+
+# =============================================================================
+#  1. EDIT EACH SEMESTER                       (rollover checklist: ROLLOVER.md)
+# =============================================================================
+
+semester:       "Fall 2026"     # shown in the sidebar, home page, and footer
+semester_short: "FA26"
+current_week:   1               # "Skip to current week" target + row highlight
+
+announcements_enabled: false    # home-page announcements (_data/announcements.yml)
+
+# External links. Set each URL here; the top-bar nav and every page that
+# links to these stay in sync (via the "*name" aliases defined below in section 3).
+# URLs left blank will be hidden from the nav.
+syllabus_url:    &syllabus_url    "https://docs.google.com/document/d/19t_IXVONixjo9kk_8kceTYXhsyGsS0NVvF1XiFB4y60/edit?usp=sharing"
+discord_url:     &discord_url     "https://discord.gg/4WbAXucb5n"
+feedback_url:    &feedback_url    ""    # anonymous feedback form
+absences_url:    &absences_url    ""    # excused-absence request form
+extensions_url:  &extensions_url  ""    # extension request form
+
+
+# =============================================================================
+#  2. SET ONCE                                 (publishing, or a rebrand)
+# =============================================================================
+
+title: Voice DeCal
+description: >-
+  Course website for the Voice DeCal at UC Berkeley.
+lang: en
+
+# Fill these in when the site goes live at a real address (see README).
+url: ""
+baseurl: ""
+
+# Default colour theme a first-time visitor sees — one of light1 / light2 /
+# light3. Visitors flip light<->dark and cycle themes themselves afterwards.
+# See README, "Color themes".
+color_scheme: light1
+
+# Sidebar logo (theme set 1's; sets 2 and 3 swap their own in via custom.scss).
+logo: "/assets/images/voicedecallogo.png"
+
+
+# =============================================================================
+#  3. SITE MACHINERY                           (leave alone unless you know why)
+# =============================================================================
+
+theme: just-the-docs
+
+# Top-bar links — labels here, URLs pulled from section 1 by the aliases.
+aux_links:
+  Syllabus:   *syllabus_url
+  Discord:    *discord_url
+  Feedback:   *feedback_url
+  Absences:   *absences_url
+  Extensions: *extensions_url
+aux_links_new_tab: true
+
+# "Edit this page on GitHub" links in the page footer
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/wydialang/voicedecal-site"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+last_edit_timestamp: true
+last_edit_time_format: "%b %-d, %Y"
+
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+enable_copy_code_button: true
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 3
+  preview_words_after: 3
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Callout boxes:  {: .note } / {: .tip } / {: .warn }  on a blockquote or paragraph
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  warn:
+    title: Heads up
+    color: red
+
+# Every content page gets `layout: default` automatically; assets never do
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "assets"
+    values:
+      layout: null
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  blanklines: false
+  profile: false
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - ROLLOVER.md
+  - LICENSE

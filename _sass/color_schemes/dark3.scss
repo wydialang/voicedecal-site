@@ -1,0 +1,29 @@
+// ===========================================================================
+//  Theme set 3 — DARK   ("Miku")
+// ===========================================================================
+
+@import "color_schemes/dark";
+
+$miku-light-teal: #86cecb;
+$miku-dark-teal: #137a7f;
+$miku-pink: #e12885;
+
+$link-color: $miku-light-teal;
+$btn-primary-color: $miku-pink;
+
+// Nested (sub-page) sidebar links: pink.
+$nav-child-link-color: $miku-pink;
+
+$feedback-color: mix($miku-pink, $sidebar-color, 16%);
+
+// "Join the Discord" style buttons: pink text, light-teal background on hover.
+$btn-secondary-color: $miku-pink;
+$btn-secondary-hover-bg: $miku-light-teal;
+$btn-secondary-hover-color: #0b4a4d;
+
+// Course-calendar table header row (home page): light teal with dark text.
+$table-header-accent: $miku-light-teal;
+$table-header-accent-text: #0b4a4d;
+
+// Sidebar logo
+$logo-name: "voicedecallogo_withmiku";

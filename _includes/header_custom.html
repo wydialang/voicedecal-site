@@ -1,0 +1,93 @@
+{%- comment -%}
+  Top-bar theme controls.
+
+  THEME SETS, each a light + dark pair, are defined in
+  _sass/color_schemes/ and exposed as stylesheets by assets/css/.
+
+  - the button flips light <-> dark within the current set
+  - clicking the site logo cycles set 1 -> 2 -> 3 (keeping light/dark)
+  - the choice is saved in the browser (localStorage "jtd-theme"); until the
+    visitor picks something, the light/dark half follows their OS setting
+{%- endcomment -%}
+
+<button type="button" class="theme-toggle js-toggle-dark-mode" aria-pressed="false" hidden>
+  <span class="theme-toggle__label">Dark mode</span>
+</button>
+
+<script>
+  jtd.onReady(function () {
+    var VALID = /^(light|dark)([1-3])$/;
+    var SETS = 3;
+
+    function parse(theme) {
+      var m = ("" + theme).match(VALID);
+      return m ? { mode: m[1], set: parseInt(m[2], 10) } : { mode: "light", set: 1 };
+    }
+    function nameOf(mode, set) { return mode + set; }
+
+    function savedChoice() {
+      try {
+        var s = localStorage.getItem("jtd-theme");
+        if (VALID.test(s)) return s;
+      } catch (e) {}
+      return null;
+    }
+    function initialTheme() {
+      var s = savedChoice();
+      if (s) return s;
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      return nameOf(prefersDark ? "dark" : "light", 1);
+    }
+
+    var toggle = document.querySelector(".js-toggle-dark-mode");
+    var label = toggle && toggle.querySelector(".theme-toggle__label");
+    var logoLink = document.querySelector(".site-title");
+
+    function apply(theme, persist) {
+      var p = parse(theme);
+      theme = nameOf(p.mode, p.set);
+      jtd.setTheme(theme);
+      if (persist) {
+        try { localStorage.setItem("jtd-theme", theme); } catch (e) {}
+      }
+      if (toggle) {
+        toggle.setAttribute("aria-pressed", p.mode === "dark" ? "true" : "false");
+        if (label) label.textContent = p.mode === "dark" ? "Light mode" : "Dark mode";
+      }
+      if (logoLink) {
+        logoLink.setAttribute("title", "Color theme " + p.set + " of " + SETS + " — click to change");
+      }
+    }
+
+    apply(initialTheme(), false);
+    if (toggle) toggle.hidden = false;
+
+    if (toggle) {
+      jtd.addEvent(toggle, "click", function () {
+        var p = parse(jtd.getTheme());
+        apply(nameOf(p.mode === "dark" ? "light" : "dark", p.set), true);
+      });
+    }
+
+    if (logoLink) {
+      jtd.addEvent(logoLink, "click", function (e) {
+        // Plain click cycles the theme set. Ctrl/Cmd/Shift/middle click still
+        // opens the home page, as a link normally would.
+        if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        var p = parse(jtd.getTheme());
+        apply(nameOf(p.mode, (p.set % SETS) + 1), true);
+      });
+    }
+
+    // Follow the OS light/dark setting, but only until the visitor chooses.
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      if (mq.addEventListener) {
+        mq.addEventListener("change", function (e) {
+          if (!savedChoice()) apply(nameOf(e.matches ? "dark" : "light", 1), false);
+        });
+      }
+    }
+  });
+</script>

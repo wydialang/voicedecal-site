@@ -1,0 +1,24 @@
+// ===========================================================================
+//  Theme set 2 — LIGHT   ("Blue & Pink")
+// ===========================================================================
+// Primary accent #035CA4 (blue, ~6.5:1 on white), secondary #F4A9CE (pink).
+
+$primary: #035ca4;
+$secondary: #f4a9ce;
+
+$link-color: $primary;
+$btn-primary-color: $primary;
+
+
+$sidebar-color: mix($primary, #ffffff, 9%); // ~#e8f0f7
+
+
+$feedback-color: mix($secondary, #ffffff, 45%);
+
+// "Join the Discord" style buttons: blue text at rest, pink on hover.
+$btn-secondary-color: $primary;
+$btn-secondary-hover-bg: $secondary;
+$btn-secondary-hover-color: #3b1226;
+
+// Sidebar logo
+$logo-name: "sealion";

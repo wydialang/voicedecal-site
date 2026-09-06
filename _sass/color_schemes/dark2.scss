@@ -1,0 +1,21 @@
+// ===========================================================================
+//  Theme set 2 — DARK   ("Blue & Pink")
+// ===========================================================================
+
+@import "color_schemes/dark";
+
+$primary: #035ca4;
+$secondary: #f4a9ce;
+
+$link-color: #7ab8e0;
+$btn-primary-color: $primary;
+
+$feedback-color: mix($secondary, $sidebar-color, 20%);
+
+// "Join the Discord" style buttons: pink on hover, matching the light theme.
+$btn-secondary-color: #7ab8e0;
+$btn-secondary-hover-bg: $secondary;
+$btn-secondary-hover-color: #3b1226;
+
+// Sidebar logo
+$logo-name: "sealion";

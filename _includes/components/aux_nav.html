@@ -1,0 +1,22 @@
+{%- comment -%}
+  Overrides the theme's aux_nav so a link with a blank URL (see the
+  external-links block in _config.yml) is skipped instead of rendering a
+  dead link.
+{%- endcomment -%}
+<nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    {% for link in site.aux_links %}
+      {%- if link.last and link.last != "" %}
+      <li class="aux-nav-list-item">
+        <a href="{{ link.last }}" class="site-button"
+          {% if site.aux_links_new_tab %}
+          target="_blank" rel="noopener noreferrer"
+          {% endif %}
+        >
+          {{ link.first }}
+        </a>
+      </li>
+      {%- endif -%}
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,16 @@
+// ===========================================================================
+//  Theme set 1 — DARK   ("Teal")
+// ===========================================================================
+// Starts from Just the Docs' built-in `dark` scheme (which also pulls in the
+// dark syntax-highlighting theme), then swaps the accent to teal.
+
+@import "color_schemes/dark";
+
+$primary: #0d9488;    // teal-600, for buttons
+$link-primary: #5eead4; // teal-300
+
+$link-color: $link-primary;
+$btn-primary-color: $primary;
+
+// Sidebar hover
+$feedback-color: mix($link-primary, $sidebar-color, 10%);

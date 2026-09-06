@@ -1,0 +1,13 @@
+{%- comment -%}
+  Overrides the theme's _includes/title.html so the sidebar header shows the
+  logo, the site title, and the semester. Layout is in _sass/custom/custom.scss.
+{%- endcomment -%}
+{% if site.logo %}
+  <span class="site-logo" aria-hidden="true"></span>
+  <span class="site-title-names">
+    <span class="site-title-text">{{ site.title }}</span>
+    {%- if site.semester %}<span class="site-title-semester">{{ site.semester }}</span>{%- endif -%}
+  </span>
+{% else %}
+  {{ site.title }}{% if site.semester %} &middot; {{ site.semester }}{% endif %}
+{% endif %}

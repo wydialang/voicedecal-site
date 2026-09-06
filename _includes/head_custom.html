@@ -1,0 +1,34 @@
+<!-- Extra tags injected into <head> on every page. -->
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ '/assets/images/larynxmodel.png' | relative_url }}" />
+
+<!-- Theme: apply the visitor's saved color scheme (or their OS light/dark
+     preference) before the page paints. The theme's
+     default stylesheet (just-the-docs-default.css) is compiled from
+     color_scheme in _config.yml (light1), so this only rewrites the link when
+     the wanted scheme is something else. -->
+<script>
+  (function () {
+    try {
+      var valid = /^(light|dark)[1-3]$/;
+      var saved = localStorage.getItem("jtd-theme");
+      var wanted;
+      if (saved && valid.test(saved)) {
+        wanted = saved;
+      } else {
+        var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        wanted = dark ? "dark1" : "light1";
+      }
+      if (wanted !== "light1") {
+        var link = document.querySelector('link[rel="stylesheet"][href*="just-the-docs-default"]');
+        if (link) {
+          link.setAttribute(
+            "href",
+            link.getAttribute("href").replace("just-the-docs-default.css", "just-the-docs-" + wanted + ".css")
+          );
+        }
+      }
+    } catch (e) {}
+  })();
+</script>

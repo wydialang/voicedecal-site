@@ -1,0 +1,6 @@
+# Normalize line endings: store everything as LF in the repo so the Linux
+# GitHub Actions build and Windows editors agree.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

@@ -1,0 +1,33 @@
+// ===========================================================================
+//  Theme set 3 — LIGHT   ("Miku")
+// ===========================================================================
+// Inspired by Hatsune Miku: #86cecb light teal, #137a7f dark teal, #e12885 pink.
+
+$miku-light-teal: #86cecb;
+$miku-dark-teal: #137a7f;
+$miku-pink: #e12885;
+
+// Links / primary buttons: dark teal (~5.1:1 on white, AA).
+$link-color: $miku-dark-teal;
+$btn-primary-color: $miku-dark-teal;
+
+// Nested (sub-page) sidebar links: pink.
+$nav-child-link-color: $miku-pink;
+
+// Sidebar: a soft pale teal instead of near-white.
+$sidebar-color: mix($miku-light-teal, #ffffff, 45%); // ~#c8e9e8
+
+// Sidebar link hover
+$feedback-color: mix($miku-pink, #ffffff, 20%);
+
+// "Join the Discord" style buttons: pink text, light-teal background on hover.
+$btn-secondary-color: $miku-pink;
+$btn-secondary-hover-bg: $miku-light-teal;
+$btn-secondary-hover-color: #0b4a4d;
+
+// Course-calendar table header row (home page): light teal with dark text.
+$table-header-accent: $miku-light-teal;
+$table-header-accent-text: #0b4a4d;
+
+// Sidebar logo:
+$logo-name: "voicedecallogo_withmiku";
