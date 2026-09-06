@@ -32,24 +32,14 @@
       } catch (e) {}
       return null;
     }
-    function initialTheme() {
-      var s = savedChoice();
-      if (s) return s;
-      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      return nameOf(prefersDark ? "dark" : "light", 1);
-    }
 
     var toggle = document.querySelector(".js-toggle-dark-mode");
     var label = toggle && toggle.querySelector(".theme-toggle__label");
     var logoLink = document.querySelector(".site-title");
 
-    function apply(theme, persist) {
+    // Reflect the theme the page already loaded with (see _includes/head.html).
+    function syncUI(theme) {
       var p = parse(theme);
-      theme = nameOf(p.mode, p.set);
-      jtd.setTheme(theme);
-      if (persist) {
-        try { localStorage.setItem("jtd-theme", theme); } catch (e) {}
-      }
       if (toggle) {
         toggle.setAttribute("aria-pressed", p.mode === "dark" ? "true" : "false");
         if (label) label.textContent = p.mode === "dark" ? "Light mode" : "Dark mode";
@@ -59,7 +49,18 @@
       }
     }
 
-    apply(initialTheme(), false);
+    // Change the theme — only ever from a click or an OS change, never on load.
+    function apply(theme, persist) {
+      var p = parse(theme);
+      theme = nameOf(p.mode, p.set);
+      jtd.setTheme(theme);
+      if (persist) {
+        try { localStorage.setItem("jtd-theme", theme); } catch (e) {}
+      }
+      syncUI(theme);
+    }
+
+    syncUI(jtd.getTheme());
     if (toggle) toggle.hidden = false;
 
     if (toggle) {

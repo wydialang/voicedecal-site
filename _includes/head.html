@@ -1,0 +1,65 @@
+{%- comment -%}
+  Copy of Just the Docs v0.12 _includes/head.html. The ONLY change: the main
+  theme stylesheet. The stock file always loads just-the-docs-default.css and
+  our code swapped it client-side, which flashed the wrong theme on every page.
+  Here a tiny inline script picks the right themed stylesheet before anything
+  paints, so it's the only one that ever loads. Re-sync this file if you bump
+  the just-the-docs version.
+{%- endcomment -%}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  {%- comment -%} Load the visitor's theme (saved choice, else OS preference) up front. {%- endcomment -%}
+  <script>
+    (function () {
+      var name = "light1";
+      try {
+        var saved = localStorage.getItem("jtd-theme");
+        if (/^(light|dark)[1-3]$/.test(saved)) {
+          name = saved;
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          name = "dark1";
+        }
+      } catch (e) {}
+      document.write('<link rel="stylesheet" href="{{ '/assets/css/just-the-docs-' | relative_url }}' + name + '.css">');
+    })();
+  </script>
+  <noscript><link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}"></noscript>
+
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  {% include css/activation.scss.liquid %}
+  </style>
+
+  {% if site.ga_tracking != nil %}
+    {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracking_ids.first }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      {% for ga_property in ga_tracking_ids %}
+        gtag('config', '{{ ga_property }}'{% unless site.ga_tracking_anonymize_ip == nil %}, { 'anonymize_ip': true }{% endunless %});
+      {% endfor %}
+    </script>
+  {% endif %}
+
+  {% if site.search_enabled != false %}
+    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+  {% endif %}
+
+  <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include_cached favicon.html %}
+
+  {% seo %}
+
+  {% include head_custom.html %}
+
+</head>
