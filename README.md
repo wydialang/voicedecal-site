@@ -12,7 +12,7 @@ TODO
 ---
 
 ## Editing common things
-Most list-based content that needs to be updated regularly (staff info, schedule) (read `ROLLOVER.md`) are rendered from `.yml` files in `_data`. The webpages themselves are edited in Markdown.
+Any list-based content that needs to be updated over time, like the staff info and the course schedule, are rendered from `.yml` files in `_data`. The rest of the content and the webpages themselves are edited in Markdown.
 
 | To change… | Edit… |
 |:-----------|:------|
@@ -31,7 +31,7 @@ Most list-based content that needs to be updated regularly (staff info, schedule
 
 ### Course links
 
-Set the course links near the top of
+The course links are set near the top of
 [`_config.yml`](_config.yml). They feed the top-right menu bar and every other page that references the links. For example, links to the syllabus/Discord can be referenced as `{{ site.syllabus_url }}` /
 `{{ site.discord_url }}` in the Markdown; `%syllabus%` / `%discord%` in
 announcement entries.
@@ -72,9 +72,9 @@ facilitators:
     contact: you@berkeley.edu      # a bare email links itself; else Markdown
 ```
 
-Cards render with the photo beside the text, alternating left/right down the
+The profile cards are rendered with the photo beside the text, alternating left/right down the
 list, and stacking on phones. The rest of the Staff page (faculty sponsor,
-contributors, contact table) stays in [`staff.md`](staff.md).
+contributors, contact table) can be edited directly in [`staff.md`](staff.md).
 
 ### The Google Calendar (schedule page)
 
@@ -104,7 +104,7 @@ There are currrently three theme **sets**, each with a light and a dark version,
 | 2 | `light2.scss` | `dark2.scss` | Blue & pink |
 | 3 | `light3.scss` | `dark3.scss` | Miku (teal + pink) |
 
-On the site, visitors **flip light/dark** with the top-bar button and **cycle
+On the site, visitors can **flip light/dark** with the top-bar button and **cycle
 between sets** by clicking the logo above the sidebar. Their choice is saved in their browser;
 until they choose, the light/dark half follows their computer's setting.
 
@@ -236,7 +236,7 @@ Refer to [`ROLLOVER.md`](ROLLOVER.md) for a full checklist of config values, fil
 
 Running the website locally allows you to preview the site as you make updates (without making commits). To do this, you'll need to install Ruby (`version >=3.1`) on your own device (look up the official guidelines for installing Ruby on your OS). 
 
-(However, this may be annoying to do if you are on Windows. The official method seems to be to use RubyInstaller, but I personally use WSL2 as I couldn't get RubyInstaller to work.) 
+(However, this may be annoying to do if you are on Windows. The official method seems to be to use RubyInstaller, but I personally use WSL2 as I couldn't get RubyInstaller to work. -Lydia) 
 
 
 ---
