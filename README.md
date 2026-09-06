@@ -3,10 +3,11 @@
 The course website is a [Jekyll](https://jekyllrb.com/) site built with the
 [Just the Docs](https://just-the-docs.com/) theme.
 
+
 ---
 
 ## Publishing / hosting status
-TODO
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9604328d-eeaa-45c6-a427-44c1f0324b8b/deploy-status)](https://app.netlify.com/projects/voicedecal/deploys)
 
 
 ---
