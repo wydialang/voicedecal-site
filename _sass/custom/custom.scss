@@ -220,17 +220,14 @@ $logo-name: "voicedecallogo" !default;
   th:nth-child(n + 3),
   td:nth-child(n + 3) { overflow-wrap: break-word; }
 
-  // bullet list under the topic heading (the theme hides list markers by
-  // default, so put them back)
+  // bullet list under the topic heading — the theme already draws its own "•"
+  // marker (as a ::before), so don't add list-style or a second one appears.
   ul {
-    margin: 0.35rem 0 0;
-    padding-left: 1.15rem;
-    list-style: disc outside;
+    margin-top: 0.35rem;
   }
 
   li {
     margin: 0.15rem 0;
-    list-style: inherit;
   }
 
   // the current week (current_week in _config.yml)
