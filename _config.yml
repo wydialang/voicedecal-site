@@ -37,6 +37,7 @@ title: Voice DeCal
 description: >-
   Course website for the Voice DeCal at UC Berkeley.
 lang: en
+image: "/assets/images/voicedecallogo_withsidetext.png"
 
 # Fill in domain here for page metadata
 # baseurl is the subpath, e.g. "/fa26"
