@@ -65,11 +65,11 @@ Same idea; one block per person in [`_data/staff.yml`](_data/staff.yml):
 
 ```yaml
 facilitators:
-  - name: lydia wang
-    photo: tetomuni.png            # a file in assets/images/ (cropped to a square)
+  - name: reggie the sea lion
+    photo: reggie.png            # a file in assets/images/ (cropped to a square)
     bio: >
       short paragraph, *Markdown* and [links](url) allowed
-    contact: you@berkeley.edu      # a bare email links itself; else Markdown
+    contact: auraur@berkeley.edu      # a bare email links itself; else Markdown
 ```
 
 The profile cards are rendered with the photo beside the text, alternating left/right down the
