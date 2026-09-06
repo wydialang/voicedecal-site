@@ -38,8 +38,9 @@ description: >-
   Course website for the Voice DeCal at UC Berkeley.
 lang: en
 
-# Fill these in when the site goes live at a real address (see README).
-url: ""
+# Fill in domain here for page metadata
+# baseurl is the subpath, e.g. "/fa26"
+url: "https://voicedecal.com"
 baseurl: ""
 
 # Default colour theme a first-time visitor sees — one of light1 / light2 /

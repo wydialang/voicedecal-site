@@ -1,4 +1,4 @@
-# Voice DeCal course website
+# Voice DeCal course website: https://voicedecal.com
 
 The course website is a [Jekyll](https://jekyllrb.com/) site built with the
 [Just the Docs](https://just-the-docs.com/) theme.
