@@ -228,18 +228,19 @@ nav_external_links:
 ## Math (LaTeX)
 
 KaTeX renders math anywhere on the site — in a page, or in `_data/schedule.yml` /
-`_data/staff.yml`:
+`_data/staff.yml`. **Always wrap math in `$$ … $$`:**
 
 | Write | Result |
 |:------|:-------|
-| `\( f_0 = \tfrac{c}{4L} \)` | inline |
-| `$$ \dots $$` | inline, or its own line if the whole line |
-| `\[ \dots \]` | its own line |
+| `the fundamental $$f_0 = \tfrac{c}{4L}$$ rises` | inline, in the line of text |
+| `$$f_0 = \tfrac{c}{4L}$$` alone on its own line | centered on its own line |
 
-Use these delimiters, **not** single `$` (it collides with dollar signs and the
-Markdown parser). Full list of supported commands:
-<https://katex.org/docs/supported>. A typo renders in red rather than breaking
-the page.
+kramdown decides inline vs. centered from context, so you only ever type
+`$$ … $$`. Do **not** use single `$` or type `\( … \)` / `\[ … \]` directly —
+the Markdown parser eats the backslashes.
+
+Full list of supported commands: <https://katex.org/docs/supported>. A typo
+renders in red rather than breaking the page.
 
 ---
 

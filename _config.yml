@@ -122,10 +122,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Leave LaTeX math untouched at build time; KaTeX renders it in the browser
-# (loaded in _includes/head_custom.html).
-kramdown:
-  math_engine: null
+# LaTeX math: kramdown's default (mathjax) engine turns  $$ ... $$  into
+# \(...\) / \[...\], which KaTeX renders in the browser (loaded in
+# _includes/head_custom.html). See the README, "Math (LaTeX)".
 
 compress_html:
   clippings: all
