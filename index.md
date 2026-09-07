@@ -20,6 +20,7 @@ We're excited to have you here!
 {: .fs-5 .fw-300 }
 [Syllabus]({{ site.syllabus_url }}){: .btn .btn-primary .mr-2 target="_blank" rel="noopener" }
 [Join the Discord]({{ site.discord_url }}){: .btn target="_blank" rel="noopener" }
+[Course Interest Form](https://forms.gle/FQXaGa6oXkyxeNYSA){: .btn target="_blank" rel="noopener" }
 
 <div class="clearfix"></div>
 

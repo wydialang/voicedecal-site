@@ -30,7 +30,7 @@ No specific requirements, but students should have a means of creating, editing,
 
 ## How to enroll
 
-1. Fill out the interest form (linked in the [syllabus]({{ site.syllabus_url }})).
+1. Fill out the interest form.
 2. Come to the first class.
 3. Students who complete both the form and attend the first class will receive a CCN they can use to add the class on CalCentral.
 4. Enrollment is first-come, first-served up to the room capacity.
