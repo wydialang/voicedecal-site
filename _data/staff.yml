@@ -15,11 +15,23 @@ facilitators:
     photo: tetomuni.png
     bio: >
       hi! i'm a computer science, cognitive science and linguistics major
-      entering my *n*th year at cal. I started the decal a semester ago and
+      entering my 
+
+      $$n\text{th}$$ year at cal. I started the decal a semester ago and
       I'm super excited to be teaching it again ! !
     contact: "lydiaywang+voicedecal@berkeley.edu"
 
-  - name: Placeholder Facilitator Two
+  - name: Darren Ting
     photo: staff-placeholder.svg
-    bio: "Placeholder: year and major. A sentence or two about their background and what they're excited to teach."
+    bio: ""
     contact: "**@handle** on Discord"
+
+  - name: James Bosset
+    photo: staff-placeholder.svg
+    bio: ""
+    contact: "**@handle** on Discord"
+
+  # - name: Placeholder Facilitator Two
+  #   photo: staff-placeholder.svg
+  #   bio: "Placeholder: year and major. A sentence or two about their background and what they're excited to teach."
+  #   contact: "**@handle** on Discord"
