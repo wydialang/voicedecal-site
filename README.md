@@ -225,6 +225,24 @@ nav_external_links:
 
 ---
 
+## Math (LaTeX)
+
+KaTeX renders math anywhere on the site — in a page, or in `_data/schedule.yml` /
+`_data/staff.yml`:
+
+| Write | Result |
+|:------|:-------|
+| `\( f_0 = \tfrac{c}{4L} \)` | inline |
+| `$$ \dots $$` | inline, or its own line if the whole line |
+| `\[ \dots \]` | its own line |
+
+Use these delimiters, **not** single `$` (it collides with dollar signs and the
+Markdown parser). Full list of supported commands:
+<https://katex.org/docs/supported>. A typo renders in red rather than breaking
+the page.
+
+---
+
 ## Starting a new semester
 
 `main` is always the current, live semester. At the end of a term you freeze the

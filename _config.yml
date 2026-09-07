@@ -122,6 +122,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Leave LaTeX math untouched at build time; KaTeX renders it in the browser
+# (loaded in _includes/head_custom.html).
+kramdown:
+  math_engine: null
+
 compress_html:
   clippings: all
   comments: all

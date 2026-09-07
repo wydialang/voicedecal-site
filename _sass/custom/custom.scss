@@ -233,7 +233,10 @@ $logo-name: "voicedecallogo" !default;
   // the current week (current_week in _config.yml)
   tr.is-current > td {
     background-color: rgba($feedback-color, 0.6);
-    box-shadow: inset 3px 0 0 $link-color;
+  }
+
+  tr.is-current > td:first-child {
+    box-shadow: inset 3px 0 0 $link-color; // accent bar on the Wk cell only
   }
 }
 
