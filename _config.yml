@@ -18,15 +18,17 @@ semester_short: "FA26"
 current_week:   1               # "Skip to current week" target + row highlight
 
 announcements_enabled: false    # home-page announcements (_data/announcements.yml)
+interest_form_enabled: true     # show the interest-form button on the home page (start of semester only)
 
 # External links. Set each URL here; the top-bar nav and every page that
 # links to these stay in sync (via the "*name" aliases defined below in section 3).
 # URLs left blank will be hidden from the nav.
-syllabus_url:    &syllabus_url    "https://docs.google.com/document/d/19t_IXVONixjo9kk_8kceTYXhsyGsS0NVvF1XiFB4y60/edit?usp=sharing"
-discord_url:     &discord_url     "https://discord.gg/4WbAXucb5n"
-feedback_url:    &feedback_url    ""    # anonymous feedback form
-absences_url:    &absences_url    ""    # excused-absence request form
-extensions_url:  &extensions_url  ""    # extension request form
+syllabus_url:        &syllabus_url        "https://docs.google.com/document/d/19t_IXVONixjo9kk_8kceTYXhsyGsS0NVvF1XiFB4y60/edit?usp=sharing"
+discord_url:         &discord_url         "https://discord.gg/4WbAXucb5n"
+interest_form_url:   &interest_form_url   "https://forms.gle/FQXaGa6oXkyxeNYSA"    # course interest / enrollment form (home-page button; toggle with interest_form_enabled)
+feedback_form_url:   &feedback_form_url   ""    # anonymous feedback form
+absences_form_url:   &absences_form_url   ""    # excused-absence request form
+extensions_form_url: &extensions_form_url ""    # extension request form
 
 
 # =============================================================================
@@ -63,9 +65,9 @@ theme: just-the-docs
 aux_links:
   Syllabus:   *syllabus_url
   Discord:    *discord_url
-  Feedback:   *feedback_url
-  Absences:   *absences_url
-  Extensions: *extensions_url
+  Feedback:   *feedback_form_url
+  Absences:   *absences_form_url
+  Extensions: *extensions_form_url
 aux_links_new_tab: true
 
 # "Edit this page on GitHub" links in the page footer

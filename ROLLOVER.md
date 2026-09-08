@@ -35,9 +35,11 @@ Work on `main` (edit on github.com is fine). Change these, then commit:
 ### External links -- `_config.yml`
 - [ ] `syllabus_url:` → new semester's syllabus doc
 - [ ] `discord_url:` → valid invite link (make sure link isn't expired)
-- [ ] `feedback_url`
-- [ ] `absences_url`
-- [ ] `extensions_url`
+- [ ] `interest_form_url:` → new interest / enrollment form, and set
+  `interest_form_enabled: true` (turn it back to `false` once enrollment settles)
+- [ ] `feedback_form_url`
+- [ ] `absences_form_url`
+- [ ] `extensions_form_url`
 
 
 ### Home page -- `index.md`
