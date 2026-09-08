@@ -37,6 +37,12 @@ The course links are set near the top of
 `{{ site.discord_url }}` in the Markdown; `%syllabus%` / `%discord%` in
 announcement entries.
 
+The **course interest form** is a home-page button rather than a nav link. Set
+`interest_form_url` alongside the others, and flip `interest_form_enabled` to
+`true` / `false` to show or hide the button (it's usually only needed in the
+first week or two). The button also stays hidden while `interest_form_url` is
+blank, so the toggle can be left `true` between semesters.
+
 
 ### Course schedule (Home page)
 

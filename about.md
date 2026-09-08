@@ -30,7 +30,7 @@ No specific requirements, but students should have a means of creating, editing,
 
 ## How to enroll
 
-1. Fill out the interest form.
+1. Fill out the {% if site.interest_form_url != "" %}[interest form]({{ site.interest_form_url }}){% else %}interest form{% endif %}.
 2. Come to the first class.
 3. Students who complete both the form and attend the first class will receive a CCN they can use to add the class on CalCentral.
 4. Enrollment is first-come, first-served up to the room capacity.

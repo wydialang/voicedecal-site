@@ -42,7 +42,7 @@ Department of Music
 | Questions, discussions with staff and peers | [Course Discord]({{ site.discord_url }}) |
 | Accommodations, private matters | Email the instructor(s) |
 | Office hours | See the [Weekly Schedule](schedule) |
-| Anonymous feedback | [Feedback Form]({{ site.feedback_url }}) |
+| Anonymous feedback | [Feedback Form]({{ site.feedback_form_url }}) |
 
 Please use Discord rather than email for anything that isn't private — you'll
 get a faster answer and other students benefit from seeing it.
