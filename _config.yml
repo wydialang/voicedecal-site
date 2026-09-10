@@ -27,8 +27,8 @@ syllabus_url:        &syllabus_url        "https://docs.google.com/document/d/19
 discord_url:         &discord_url         "https://discord.gg/4WbAXucb5n"
 interest_form_url:   &interest_form_url   "https://forms.gle/FQXaGa6oXkyxeNYSA"    # course interest / enrollment form (home-page button; toggle with interest_form_enabled)
 feedback_form_url:   &feedback_form_url   ""    # anonymous feedback form
-absences_form_url:   &absences_form_url   ""    # excused-absence request form
-extensions_form_url: &extensions_form_url ""    # extension request form
+absences_form_url:   &absences_form_url   "https://forms.gle/D35D8aUDFK8BWYU29"    # excused-absence request form
+extensions_form_url: &extensions_form_url "https://forms.gle/2etURU4a7YvDYB9W9"    # extension request form
 
 
 # =============================================================================
