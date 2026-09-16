@@ -22,9 +22,11 @@ facilitators:
     contact: "lydiaywang+voicedecal@berkeley.edu"
 
   - name: Darren Ting
-    photo: staff-placeholder.svg
-    bio: ""
-    contact: "**@handle** on Discord"
+    photo: darrenthing.png
+    bio: >
+        hi I'm darren I am also a CS major senior; I sing and I scream and I sleep sometimes.
+        I like vocaloid things, ask me about digital audio editing stuff!
+    contact: "**@thecool** on Discord"
 
   - name: James Bosset
     photo: staff-placeholder.svg
