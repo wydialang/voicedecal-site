@@ -1,6 +1,8 @@
 {%- comment -%}
   Renders the course-schedule table from _data/schedule.yml.
   Resource items are "label | https://url" (a link) or plain text.
+  Materials (slides, worksheets…) are "label | https://url" too; they show as
+  [label, label] after the topic, and an item with no URL is skipped.
   `current_week` in _config.yml controls the "Skip to current week" anchor
   and which row is highlighted.
 {%- endcomment -%}
@@ -14,6 +16,15 @@
 <td>{% if wk.week == site.current_week %}<span id="week-1"></span>{% endif %}{{ wk.week }}</td>
 <td>{{ wk.date }}</td>
 <td><strong>{{ wk.topic }}</strong>
+{%- assign mat_links = "" | split: "," -%}
+{%- for m in wk.materials -%}
+  {%- assign bits = m | split: " | " -%}
+  {%- if bits.size > 1 and bits[1] != blank -%}
+    {%- capture mat_link -%}<a href="{{ bits[1] | strip }}" target="_blank" rel="noopener" aria-label="{{ wk.topic | escape }}: {{ bits[0] | strip | escape }}">{{ bits[0] | strip }}</a>{%- endcapture -%}
+    {%- assign mat_links = mat_links | push: mat_link -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if mat_links.size > 0 %} <span class="week-materials"><span aria-hidden="true">[</span>{{ mat_links | join: ", " }}<span aria-hidden="true">]</span></span>{% endif -%}
 {%- if wk.points %}<ul>{% for p in wk.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif -%}
 </td>
 <td>

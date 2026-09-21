@@ -220,6 +220,12 @@ $logo-name: "voicedecallogo" !default;
   th:nth-child(n + 3),
   td:nth-child(n + 3) { overflow-wrap: break-word; }
 
+  // [slides, worksheet] links after the topic heading (materials: in schedule.yml)
+  .week-materials {
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+
   // bullet list under the topic heading — the theme already draws its own "•"
   // marker (as a ::before), so don't add list-style or a second one appears.
   ul {

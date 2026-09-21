@@ -52,6 +52,9 @@ The schedule is one YAML block per week in [`_data/schedule.yml`](_data/schedule
 - week: 7
   date: "10/26"
   topic: Voice Modulation II       # the bold heading
+  materials:                       # shown as [slides, worksheet] after the heading (optional)
+    - slides | https://docs.google.com/presentation/d/…      # "label | url"; no url = skipped
+    - worksheet | https://docs.google.com/document/d/…
   points:                          # bullets under the heading (optional)
     - Distortion
     - False chords

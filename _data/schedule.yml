@@ -6,6 +6,10 @@
 #    - week: 7                     week number (shown in the "Wk" column)
 #      date: "10/26"               keep the quotes
 #      topic: Voice Modulation II  the bold heading in the Topic column
+#      materials:                  links shown as [slides, worksheet] after the
+#                                  heading (optional); an item with no URL is skipped
+#        - slides | https://docs.google.com/presentation/d/…   <- "label | url"
+#        - worksheet | https://…
 #      points:                     bullet list under the heading (optional)
 #        - Distortion
 #        - False chords
@@ -22,6 +26,8 @@
 - week: 1
   date: "9/14"
   topic: Introduction to Voice
+  materials:
+    - slides | https://docs.google.com/presentation/d/1CQAVYcCe-dijd8VHGmFvrWVAmhxDLD6uAXaOpZZsE70/edit?usp=sharing
   points:
     - Course policies and vocal goals
     - Intro to voice
