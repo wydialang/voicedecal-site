@@ -40,6 +40,8 @@
 - week: 2
   date: "9/21"
   topic: Anatomy Basics
+  materials:
+    - slides | https://docs.google.com/presentation/d/1gr21VvyzPbLZvRp5UH6fxQJCtDcZoUqAo49ly01Qzog/edit?usp=sharing
   points:
     - Vocal tract anatomy
     - Phonation types and vocal qualities
