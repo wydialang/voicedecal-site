@@ -15,7 +15,7 @@
 
 semester:       "Fall 2026"     # shown in the sidebar, home page, and footer
 semester_short: "FA26"
-current_week:   2               # "Skip to current week" target + row highlight
+current_week:   3               # "Skip to current week" target + row highlight
 
 announcements_enabled: false    # home-page announcements (_data/announcements.yml)
 interest_form_enabled: true     # show the interest-form button on the home page (start of semester only)
