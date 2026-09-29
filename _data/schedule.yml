@@ -59,6 +59,8 @@
 - week: 3
   date: "9/28"
   topic: Intro to Vocal Acoustics
+  materials:
+    - slides | https://docs.google.com/presentation/d/17VoppTZw_i-sFA6cW-B2rZBRKB9OvPZG7wV8GQCf5L0/edit?usp=sharing
   points:
     - Sound waves, DSP
     - Source-filter theory
