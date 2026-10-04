@@ -70,7 +70,6 @@
   assignment:
     - Acoustic analysis practice
   resources:
-    - Vocal Harmonics & Formants | http://www.voicescienceworks.org/harmonics-vs-formants.html
     - Daniel Russel's Acoustics Animations | https://www.acs.psu.edu/drussell/demos.html
     - Real-time spectrogram | https://spec.sumianvoice.com/
     - Braat | https://braat.app/practice
@@ -88,9 +87,11 @@
     - "Pitch and weight exercises (PIP, SDBD/BDSD, whisper and vowel slides)"
     - 'Resonance exercises ("hello" exercise, word chart)'
   resources:
-    - Filtered Listening | http://www.voicescienceworks.org/filtered-listening-and-vocal-regions.html
     - Acoustic Gender Space Viewer | https://acousticgender.space/
+    - Selene's Voice Archive | https://selenearchive.github.io/
     - UCLA Phonetics Lab Data | https://www.phonetics.ucla.edu/
+    - Filtered Listening | http://www.voicescienceworks.org/filtered-listening-and-vocal-regions.html
+
 
 - week: 5
   date: "10/12"
