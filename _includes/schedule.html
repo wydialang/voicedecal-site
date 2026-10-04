@@ -13,7 +13,7 @@
 <tbody>
 {%- for wk in site.data.schedule %}
 <tr{% if wk.week == site.current_week %} class="is-current"{% endif %}>
-<td>{% if wk.week == site.current_week %}<span id="week-1"></span>{% endif %}{{ wk.week }}</td>
+<td>{% if wk.week == site.current_week %}<span id="current-week"></span>{% endif %}{{ wk.week }}</td>
 <td>{{ wk.date }}</td>
 <td><strong>{{ wk.topic }}</strong>
 {%- assign mat_links = "" | split: "," -%}

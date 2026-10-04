@@ -34,7 +34,7 @@ We're excited to have you here!
 
 Subject to change. Please refer to in-class announcements for weekly slides, homework assignments, and office hours.
 
-[Skip to current week](#week-1){: .btn .btn-outline }
+[Skip to current week](#current-week){: .btn .btn-outline }
 
 {% include schedule.html %}
 
