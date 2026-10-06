@@ -78,6 +78,9 @@
 - week: 4
   date: "10/5"
   topic: Vocal Acoustics, Perceptual Qualities and Gender
+  materials:
+    - slides | https://docs.google.com/presentation/d/1IbfQJvSM2bhe62XvBr0WY9GSyHEqYA3RNdNOzn-Da5M/edit?usp=sharing
+    - recording | 
   points:
     - "Acoustics cont. (open quotient, spectral rolloff)"
     - Perceptual qualities
