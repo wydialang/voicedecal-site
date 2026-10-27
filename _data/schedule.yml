@@ -134,6 +134,9 @@
 - week: 7
   date: "10/26"
   topic: Voice Modulation II
+  materials:
+    - slides | https://docs.google.com/forms/d/e/1FAIpQLSfe4SeL7a-QL82JTnkrOCIsb7l1JQA33aKpypFah7Q4yrnrhQ/viewform?usp=sharing&ouid=117763098711885290149
+    - recording |
   points:
     - Distortion
     - False chords
