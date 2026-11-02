@@ -150,6 +150,9 @@
 - week: 8
   date: "11/2"
   topic: Vocal Performance & Editing Workshop
+  materials:
+    - slides | https://docs.google.com/presentation/d/1L1RJCcdtOCLakjkfnjovG33sIpZnV1IY7ERNcTIPXuA/edit?usp=sharing
+    - recording |
   points:
     - "Different applications: narration, video games"
     - Audio and editing setup
