@@ -178,14 +178,6 @@
   date: "11/16"
   topic: Guest Lecture
   points:
-    - "Focus: industry, voice acting"
-  assignment:
-    - Final project released
-
-- week: 11
-  date: "11/23"
-  topic: Guest Lecture
-  points:
     - "Focus: vocal health, vocal gender, voice training"
   assignment:
     - Work on final project!
@@ -193,6 +185,15 @@
     - Voice Disorders Simulations | https://slpsims.csd.wisc.edu/simulations.html
     - adult pharynx 3D models | https://www.visiblebody.com/blog/anatomy-and-physiology-the-pharynx-and-epiglottis
     - infant pharynx 3D model | https://www.mdpi.com/2694-2526/48/1/4
+
+- week: 11
+  date: "11/23"
+  topic: Guest Lecture
+  points:
+    - "Focus: industry, voice acting"
+  assignment:
+    - Final project released
+
 
 - week: 12
   date: "11/30"
