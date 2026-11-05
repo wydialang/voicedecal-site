@@ -234,6 +234,9 @@ $logo-name: "voicedecallogo" !default;
 
   li {
     margin: 0.15rem 0;
+    // The theme draws each bullet as an absolutely positioned ::before. Anchor
+    // it to its own <li>, or it stays put when the table scrolls sideways.
+    position: relative;
   }
 
   // the current week (current_week in _config.yml)
