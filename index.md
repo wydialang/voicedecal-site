@@ -15,7 +15,7 @@ permalink: /
 
 Welcome to Berkeley's voice DeCal, **The Art and Science of the Human Voice (LINGUIS 198)**!
 
-We're excited to have you here!
+We're excited to have you here! The class meets **{{ site.meeting_time }}** in **{{ site.meeting_location }}**.
 
 {: .fs-5 .fw-300 }
 [Syllabus]({{ site.syllabus_url }}){: .btn .btn-primary .mr-2 target="_blank" rel="noopener" }

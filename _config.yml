@@ -16,6 +16,8 @@
 semester:       "Fall 2026"     # shown in the sidebar, home page, and footer
 semester_short: "FA26"
 current_week:   8               # "Skip to current week" target + row highlight
+meeting_time: "Mondays 6:00–7:30 PM"  # shown on the home page
+meeting_location: "Dwinelle 187"  # shown on the home page
 
 announcements_enabled: false    # home-page announcements (_data/announcements.yml)
 interest_form_enabled: true     # show the interest-form button on the home page (start of semester only)

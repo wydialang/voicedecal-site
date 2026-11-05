@@ -31,6 +31,8 @@ Work on `main` (edit on github.com is fine). Change these, then commit:
 - [ ] `semester:` → e.g. `"Spring 2027"`
 - [ ] `semester_short:` → e.g. `"sp27"`
   *(updates the semester across the sidebar, the home-page subtitle, and the footer)*
+- [ ] `meeting_time:` / `meeting_location:` → e.g. `"Mondays 6:00–7:30 PM"` /
+  `"Dwinelle 187"` *(shown in bold in the home-page intro)*
 
 ### External links -- `_config.yml`
 - [ ] `syllabus_url:` → new semester's syllabus doc
