@@ -165,14 +165,19 @@
 - week: 9
   date: "11/9"
   topic: Voice in Tech
+  materials:
+  - slides | https://docs.google.com/presentation/d/1Mmhfu86UTpCEaissM-KJNXhxNQrZgKFABZeKcEdSk3k/edit?usp=sharing
+  - recording |
   points:
-    - Speech synthesis
+    - Speech synthesis, vocoders
     - Biometric technology
     - Vocaloid
   assignment:
     - Final project released
   resources:
     - 'Synthet: "the sound that everyone loves" | https://www.youtube.com/watch?v=KwdS01evoLk'
+    - 'Tom Scott: "How Auto-Tune Works" | https://www.youtube.com/watch?v=i09V6SkVkz8'
+
 
 - week: 10
   date: "11/16"
