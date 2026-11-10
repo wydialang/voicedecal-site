@@ -67,7 +67,7 @@
     - Sound waves, DSP
     - Source-filter theory
     - Spectrograms!
-    - Demos in Praat/Braat, DAW stuff
+    - "Demos in Praat (+ Braat!)"
   assignment:
     - Acoustic analysis practice
   resources:
@@ -86,7 +86,7 @@
     - "Acoustics cont. (open quotient, spectral rolloff)"
     - Perceptual qualities
     - Perceptual quadrant and vocal gender
-    - "Slides, SDBD/BDSD, articulation"
+    - Weight and resonance exercises
   assignment:
     - "Pitch and weight exercises (PIP, SDBD/BDSD, whisper and vowel slides)"
     - 'Resonance exercises ("hello" exercise, word chart)'
@@ -122,7 +122,8 @@
     - cheatsheet | https://docs.google.com/document/d/1pPl0hq3Sp41wweYIvJ3TMJAJKR-JxTrJua0W5DYY-NQ/edit?usp=sharing
     - recording | 
   points:
-    - "Characterization, pacing and coloring"
+    - Vocal expression and coloring
+    - Finding characters
     - Improv game
     - "Different applications: narration, video games"
   assignment:
@@ -155,8 +156,8 @@
     - slides | https://docs.google.com/presentation/d/1L1RJCcdtOCLakjkfnjovG33sIpZnV1IY7ERNcTIPXuA/edit?usp=sharing
     - recording |
   points:
-    - "Different applications: narration, video games"
-    - Audio and editing setup
+    - Recording and editing setup
+    - Using a DAW
     - Demo reels
   assignment:
     - Practice with editing software
@@ -165,14 +166,14 @@
 
 - week: 9
   date: "11/9"
-  topic: Voice in Tech
+  topic: Voice and Technology
   materials:
   - slides | https://docs.google.com/presentation/d/1Mmhfu86UTpCEaissM-KJNXhxNQrZgKFABZeKcEdSk3k/edit?usp=sharing
   - recording |
   points:
-    - Speech synthesis, vocoders
-    - Biometric technology
+    - Speech synthesis
     - Vocaloid
+    - Vocoders, Auto-Tune, and other tools
   assignment:
     - Final project released
     - DeCal Facilitator Application released | https://forms.gle/qg32SHT2WmMw9Gzz8
