@@ -58,8 +58,9 @@ The schedule is one YAML block per week in [`_data/schedule.yml`](_data/schedule
   points:                          # bullets under the heading (optional)
     - Distortion
     - False chords
-  assignment:                      # one line each (optional)
+  assignment:                      # one line each (optional); "label | url" makes a link too
     - Storytelling exercise
+    - Recording 1 | https://forms.gle/…
   resources:                       # one line each (optional)
     - Real-time spectrogram | https://spec.sumianvoice.com/   # "label | url" makes a link
     - TBD                                                     # plain text is left as-is

@@ -1,0 +1,13 @@
+{%- comment -%}
+  One line per item, used by the Assignment and Supplemental Readings columns
+  of the schedule table (schedule.html).
+  "label | https://url" becomes a link; anything else is shown as plain text.
+  Usage: {% include schedule_lines.html items=wk.assignment %}
+{%- endcomment -%}
+{%- for item in include.items -%}
+  {%- assign bits = item | split: " | " -%}
+  {%- if bits.size > 1 -%}
+    <a href="{{ bits[1] | strip }}" target="_blank" rel="noopener">{{ bits[0] | strip }}</a>
+  {%- else -%}{{ item }}{%- endif -%}
+  {%- unless forloop.last %}<br>{% endunless -%}
+{%- endfor -%}

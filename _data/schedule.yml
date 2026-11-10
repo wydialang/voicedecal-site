@@ -13,8 +13,9 @@
 #      points:                     bullet list under the heading (optional)
 #        - Distortion
 #        - False chords
-#      assignment:                 one line per item
+#      assignment:                 one line per item; "label | url" makes a link
 #        - Storytelling exercise
+#        - Recording 1 | https://forms.gle/…
 #      resources:                  one line per item
 #        - Real-time spectrogram | https://spec.sumianvoice.com/   <- "label | url"
 #        - TBD                                                      <- plain text
@@ -177,7 +178,7 @@
   resources:
     - 'Synthet: "the sound that everyone loves" | https://www.youtube.com/watch?v=KwdS01evoLk'
     - 'Tom Scott: "How Auto-Tune Works" | https://www.youtube.com/watch?v=i09V6SkVkz8'
-    - 'Tech Tangents: "DECTalk DTC01 - 1984 Speech Synthesizer" https://youtu.be/JGpf6B8EvVY?si=SGXlyhFXRgYT2bQf'
+    - 'Tech Tangents: "DECTalk DTC01 - 1984 Speech Synthesizer" | https://youtu.be/JGpf6B8EvVY?si=SGXlyhFXRgYT2bQf'
     - Stephen Hawking's voice | https://bigthink.com/high-culture/this-mit-scientist-gave-his-voice-to-stephen-hawking/
     - Vocal Tract Lab | https://www.vocaltractlab.de/
 

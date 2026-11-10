@@ -1,6 +1,7 @@
 {%- comment -%}
   Renders the course-schedule table from _data/schedule.yml.
-  Resource items are "label | https://url" (a link) or plain text.
+  Assignment and resource items are "label | https://url" (a link) or plain
+  text; see schedule_lines.html.
   Materials (slides, worksheets…) are "label | https://url" too; they show as
   [label, label] after the topic, and an item with no URL is skipped.
   `current_week` in _config.yml controls the "Skip to current week" anchor
@@ -28,20 +29,10 @@
 {%- if wk.points %}<ul>{% for p in wk.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif -%}
 </td>
 <td>
-{%- if wk.assignment -%}
-  {%- for a in wk.assignment %}{{ a }}{% unless forloop.last %}<br>{% endunless %}{% endfor -%}
-{%- else -%}&mdash;{%- endif -%}
+{%- if wk.assignment -%}{% include schedule_lines.html items=wk.assignment %}{%- else -%}&mdash;{%- endif -%}
 </td>
 <td>
-{%- if wk.resources -%}
-  {%- for r in wk.resources -%}
-    {%- assign bits = r | split: " | " -%}
-    {%- if bits.size > 1 -%}
-      <a href="{{ bits[1] | strip }}" target="_blank" rel="noopener">{{ bits[0] | strip }}</a>
-    {%- else -%}{{ r }}{%- endif -%}
-    {%- unless forloop.last %}<br>{% endunless -%}
-  {%- endfor -%}
-{%- else -%}&mdash;{%- endif -%}
+{%- if wk.resources -%}{% include schedule_lines.html items=wk.resources %}{%- else -%}&mdash;{%- endif -%}
 </td>
 </tr>
 {%- endfor %}
