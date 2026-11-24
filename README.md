@@ -53,20 +53,22 @@ The schedule is one YAML block per week in [`_data/schedule.yml`](_data/schedule
   date: "10/26"
   topic: Voice Modulation II       # the bold heading
   materials:                       # shown as [slides, worksheet] after the heading (optional)
-    - slides | https://docs.google.com/presentation/d/…      # "label | url"; no url = skipped
-    - worksheet | https://docs.google.com/document/d/…
+    - 'slides | https://docs.google.com/presentation/d/…'      # 'label | url'; no url = skipped
+    - 'worksheet | https://docs.google.com/document/d/…'
   points:                          # bullets under the heading (optional)
-    - Distortion
-    - False chords
-  assignment:                      # one line each (optional); "label | url" makes a link too
-    - Storytelling exercise
-    - Recording 1 | https://forms.gle/…
+    - 'Distortion'
+    - 'False chords'
+  assignment:                      # one line each (optional); 'label | url' makes a link too
+    - 'Storytelling exercise'
+    - 'Recording 1 | https://forms.gle/…'
   resources:                       # one line each (optional)
-    - Real-time spectrogram | https://spec.sumianvoice.com/   # "label | url" makes a link
-    - TBD                                                     # plain text is left as-is
+    - 'Real-time spectrogram | https://spec.sumianvoice.com/'   # 'label | url' makes a link
+    - 'TBD'                                                     # plain text is left as-is
 ```
 
-Wrap a value in quotes if it contains a colon or starts with punctuation.
+Put every list item in **single quotes**, as above. They work for any text
+(colons, "double quotes", parentheses) with one rule: type a literal apostrophe
+twice, e.g. `'Selene''s Voice Archive'`.
 Set `current_week` in [`_config.yml`](_config.yml) to move the "Skip to current
 week" button and the row highlight.
 

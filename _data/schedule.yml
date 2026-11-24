@@ -8,17 +8,21 @@
 #      topic: Voice Modulation II  the bold heading in the Topic column
 #      materials:                  links shown as [slides, worksheet] after the
 #                                  heading (optional); an item with no URL is skipped
-#        - slides | https://docs.google.com/presentation/d/…   <- "label | url"
-#        - worksheet | https://…
+#        - 'slides | https://docs.google.com/presentation/d/…'   <- 'label | url'
+#        - 'worksheet | https://…'
 #      points:                     bullet list under the heading (optional)
-#        - Distortion
-#        - False chords
-#      assignment:                 one line per item; "label | url" makes a link
-#        - Storytelling exercise
-#        - Recording 1 | https://forms.gle/…
+#        - 'Distortion'
+#        - 'False chords'
+#      assignment:                 one line per item; 'label | url' makes a link
+#        - 'Storytelling exercise'
+#        - 'Recording 1 | https://forms.gle/…'
 #      resources:                  one line per item
-#        - Real-time spectrogram | https://spec.sumianvoice.com/   <- "label | url"
-#        - TBD                                                      <- plain text
+#        - 'Real-time spectrogram | https://spec.sumianvoice.com/'   <- 'label | url'
+#        - 'TBD'                                                      <- plain text
+#
+#  QUOTING: put every list item in single quotes, like above. Single quotes
+#  work for any text (colons, "double quotes", parentheses…) with one rule: a
+#  literal apostrophe is typed twice:  'Selene''s Voice Archive'
 #
 #  Which week "Skip to current week" jumps to (and highlights) is set by
 #  `current_week` in _config.yml.
@@ -28,189 +32,189 @@
   date: "9/14"
   topic: Introduction to Voice
   materials:
-    - slides | https://docs.google.com/presentation/d/1CQAVYcCe-dijd8VHGmFvrWVAmhxDLD6uAXaOpZZsE70/edit?usp=sharing
-    - recording | https://drive.google.com/file/d/1rsIOnxvGt3ygdUMNyrZpFmiHHRj6Bi3_/view?usp=sharing
+    - 'slides | https://docs.google.com/presentation/d/1CQAVYcCe-dijd8VHGmFvrWVAmhxDLD6uAXaOpZZsE70/edit?usp=sharing'
+    - 'recording | https://drive.google.com/file/d/1rsIOnxvGt3ygdUMNyrZpFmiHHRj6Bi3_/view?usp=sharing'
   points:
-    - Course policies and vocal goals
-    - Intro to voice
-    - Vocal warm-ups and vocal health
+    - 'Course policies and vocal goals'
+    - 'Intro to voice'
+    - 'Vocal warm-ups and vocal health'
   assignment:
-    - Describing your voice
+    - 'Describing your voice'
   resources:
-    - NHS SOVTEs Guide | https://www.cuh.nhs.uk/patient-information/semi-occluded-vocal-tract-exercises/
+    - 'NHS SOVTEs Guide | https://www.cuh.nhs.uk/patient-information/semi-occluded-vocal-tract-exercises/'
 
 - week: 2
   date: "9/21"
   topic: Anatomy Basics
   materials:
-    - slides | https://docs.google.com/presentation/d/1gr21VvyzPbLZvRp5UH6fxQJCtDcZoUqAo49ly01Qzog/edit?usp=sharing
-    - recording | https://drive.google.com/file/d/1G0tQGYKZ4g4SO_TsHm9vGkbx-6PV6Pdc/view?usp=drive_link
+    - 'slides | https://docs.google.com/presentation/d/1gr21VvyzPbLZvRp5UH6fxQJCtDcZoUqAo49ly01Qzog/edit?usp=sharing'
+    - 'recording | https://drive.google.com/file/d/1G0tQGYKZ4g4SO_TsHm9vGkbx-6PV6Pdc/view?usp=drive_link'
   points:
-    - Vocal tract anatomy
-    - Phonation types and vocal qualities
-    - Articulation basics
+    - 'Vocal tract anatomy'
+    - 'Phonation types and vocal qualities'
+    - 'Articulation basics'
   assignment:
-    - "Anatomy self-observation exercises (breathing, laryngeal position, articulation)"
+    - 'Anatomy self-observation exercises (breathing, laryngeal position, articulation)'
   resources:
-    - larynx 2D diagrams | https://www.getbodysmart.com/larynx/
-    - larynx 3D model | https://sketchfab.com/3d-models/anatomy-of-the-larynx-a00bc73a303c46248db6a13a88b23404
-    - NIH voice and speech overview | https://www.youtube.com/watch?v=JF8rlKuSoFM
-    - Pink Trombone | https://dood.al/pinktrombone/
+    - 'larynx 2D diagrams | https://www.getbodysmart.com/larynx/'
+    - 'larynx 3D model | https://sketchfab.com/3d-models/anatomy-of-the-larynx-a00bc73a303c46248db6a13a88b23404'
+    - 'NIH voice and speech overview | https://www.youtube.com/watch?v=JF8rlKuSoFM'
+    - 'Pink Trombone | https://dood.al/pinktrombone/'
 
 - week: 3
   date: "9/28"
   topic: Intro to Vocal Acoustics
   materials:
-    - slides | https://docs.google.com/presentation/d/17VoppTZw_i-sFA6cW-B2rZBRKB9OvPZG7wV8GQCf5L0/edit?usp=sharing
-    - recording | https://drive.google.com/file/d/1ceb1kLcRy6QPi2D-Hb2x5PsEwqe2aM47/view?usp=sharing
+    - 'slides | https://docs.google.com/presentation/d/17VoppTZw_i-sFA6cW-B2rZBRKB9OvPZG7wV8GQCf5L0/edit?usp=sharing'
+    - 'recording | https://drive.google.com/file/d/1ceb1kLcRy6QPi2D-Hb2x5PsEwqe2aM47/view?usp=sharing'
   points:
-    - Sound waves, DSP
-    - Source-filter theory
-    - Spectrograms!
-    - "Demos in Praat (+ Braat!)"
+    - 'Sound waves, harmonics, DSP'
+    - 'Source-filter theory'
+    - 'Spectrograms!'
+    - 'Demos in Praat (+ Braat!)'
   assignment:
-    - Acoustic analysis practice
+    - 'Acoustic analysis practice'
   resources:
-    - Daniel Russel's Acoustics Animations | https://www.acs.psu.edu/drussell/demos.html
-    - Real-time spectrogram | https://spec.sumianvoice.com/
-    - Braat | https://braat.app/practice
-    - Takayuki Arai - Vocal Models | https://www.youtube.com/watch?v=-SgCGwFMbD8
+    - 'Daniel Russel''s Acoustics Animations | https://www.acs.psu.edu/drussell/demos.html'
+    - 'Real-time spectrogram | https://spec.sumianvoice.com/'
+    - 'Braat | https://braat.app/practice'
+    - 'Takayuki Arai - Vocal Models | https://www.youtube.com/watch?v=-SgCGwFMbD8'
 
 - week: 4
   date: "10/5"
   topic: Vocal Acoustics, Perceptual Qualities and Gender
   materials:
-    - slides | https://docs.google.com/presentation/d/1IbfQJvSM2bhe62XvBr0WY9GSyHEqYA3RNdNOzn-Da5M/edit?usp=sharing
-    - recording | 
+    - 'slides | https://docs.google.com/presentation/d/1IbfQJvSM2bhe62XvBr0WY9GSyHEqYA3RNdNOzn-Da5M/edit?usp=sharing'
+    - 'recording |'
   points:
-    - "Acoustics cont. (open quotient, spectral rolloff)"
-    - Perceptual qualities
-    - Perceptual quadrant and vocal gender
-    - Weight and resonance exercises
+    - 'Acoustics cont. (open quotient, spectral rolloff)'
+    - 'Perceptual qualities (pitch, weight, resonance)'
+    - 'Perceptual quadrant and vocal gender'
+    - 'Weight and resonance exercises'
   assignment:
-    - "Pitch and weight exercises (PIP, SDBD/BDSD, whisper and vowel slides)"
+    - 'Pitch and weight exercises (PIP, SDBD/BDSD, whisper and vowel slides)'
     - 'Resonance exercises ("hello" exercise, word chart)'
   resources:
-    - Acoustic Gender Space Viewer | https://acousticgender.space/
-    - Selene's Voice Archive | https://selenearchive.github.io/
+    - 'Acoustic Gender Space Viewer | https://acousticgender.space/'
+    - 'Selene''s Voice Archive | https://selenearchive.github.io/'
     - 'Tom Scott: "Why are adverts so loud?" | https://youtu.be/Is_wu0VRIqQ?si=KZZ-bzHqpCfRqJyM'
-    - Filtered Listening | http://www.voicescienceworks.org/filtered-listening-and-vocal-regions.html
+    - 'Filtered Listening | http://www.voicescienceworks.org/filtered-listening-and-vocal-regions.html'
 
 
 - week: 5
   date: "10/12"
   topic: Sociolinguistics of Voice
   materials:
-    - slides | https://docs.google.com/presentation/d/1Ohku_3SidBLFzPcQJ3htO1DLR_tU_XvWWbi01Q2Q5_M/edit?usp=sharing
+    - 'slides | https://docs.google.com/presentation/d/1Ohku_3SidBLFzPcQJ3htO1DLR_tU_XvWWbi01Q2Q5_M/edit?usp=sharing'
   points:
-    - "Vocal gender cont. (gendered speech traits)"
-    - Speaker identity
-    - "Accents, dialects, social judgments"
+    - 'Vocal gender cont. (gendered speech traits)'
+    - 'Speaker identity'
+    - 'Accents, dialects, social judgments'
   assignment:
-    - Accent and articulation exercise
+    - 'Accent and articulation exercise'
   resources:
-    - International Dialects of English Archive | https://www.dialectsarchive.com/
-    - UCLA Phonetics Lab Data | https://www.phonetics.ucla.edu/
-    - Speech Accent Archive (By Region) | https://accent.gmu.edu/browse_atlas.php
-    - glaswegian accent | https://www.youtube.com/watch?v=AXGP4Sez_Us
+    - 'International Dialects of English Archive | https://www.dialectsarchive.com/'
+    - 'UCLA Phonetics Lab Data | https://www.phonetics.ucla.edu/'
+    - 'Speech Accent Archive (By Region) | https://accent.gmu.edu/browse_atlas.php'
+    - 'glaswegian accent | https://www.youtube.com/watch?v=AXGP4Sez_Us'
 
 - week: 6
   date: "10/19"
   topic: Voice Modulation and Voicing Characters
   materials:
-    - slides | https://docs.google.com/presentation/d/1FrnIPDPqlxQkfCB9Y4HHA60XtHJaYIAjTklCLB4tIOY/edit?usp=sharing
-    - cheatsheet | https://docs.google.com/document/d/1pPl0hq3Sp41wweYIvJ3TMJAJKR-JxTrJua0W5DYY-NQ/edit?usp=sharing
-    - recording | 
+    - 'slides | https://docs.google.com/presentation/d/1FrnIPDPqlxQkfCB9Y4HHA60XtHJaYIAjTklCLB4tIOY/edit?usp=sharing'
+    - 'cheatsheet | https://docs.google.com/document/d/1pPl0hq3Sp41wweYIvJ3TMJAJKR-JxTrJua0W5DYY-NQ/edit?usp=sharing'
+    - 'recording |'
   points:
-    - Vocal expression and coloring
-    - Finding characters
-    - Improv game
-    - "Different applications: narration, video games"
+    - 'Vocal expression and coloring'
+    - 'Finding characters'
+    - 'Improv game'
+    - 'Different applications: narration, video games'
   assignment:
-    - Character study/imitation
+    - 'Character study/imitation'
   resources:
-    - Voice Acting (Fantasy Script Samples) | https://krcooley.wordpress.com/2019/03/12/voice-acting-fantasy-script-samples-1/
-    - Voice reel scripts | https://www.voicereels.com/scripts/
-    - Fox in Socks warm up | https://barlowsprimary.co.uk/wp-content/uploads/2020/06/Yr2-Fox-in-Socks-Lyrics-by-Dr-Seuss.pdf
+    - 'Voice Acting (Fantasy Script Samples) | https://krcooley.wordpress.com/2019/03/12/voice-acting-fantasy-script-samples-1/'
+    - 'Voice reel scripts | https://www.voicereels.com/scripts/'
+    - 'Fox in Socks warm up | https://barlowsprimary.co.uk/wp-content/uploads/2020/06/Yr2-Fox-in-Socks-Lyrics-by-Dr-Seuss.pdf'
 
 - week: 7
   date: "10/26"
   topic: Voice Modulation II
   materials:
-    - slides | https://docs.google.com/presentation/d/1RZVTxA9cWLMtoMQZtYcLBoEoeHez1t0VMbMMH-CW1V4/edit?usp=sharing
-    - recording |
+    - 'slides | https://docs.google.com/presentation/d/1RZVTxA9cWLMtoMQZtYcLBoEoeHez1t0VMbMMH-CW1V4/edit?usp=sharing'
+    - 'recording |'
   points:
-    - Distortion
-    - False chords
-    - Epiglottal growl
-    - Fry
+    - 'Distortion'
+    - 'False chords'
+    - 'Epiglottal growl'
+    - 'Fry'
   assignment:
-    - Practicing with distortion
+    - 'Practicing with distortion'
   resources:
-    - How to Fry Scream | https://singandscream.com/how-to-fry-scream/
+    - 'How to Fry Scream | https://singandscream.com/how-to-fry-scream/'
 
 - week: 8
   date: "11/2"
   topic: Vocal Performance & Editing Workshop
   materials:
-    - slides | https://docs.google.com/presentation/d/1L1RJCcdtOCLakjkfnjovG33sIpZnV1IY7ERNcTIPXuA/edit?usp=sharing
-    - recording |
+    - 'slides | https://docs.google.com/presentation/d/1L1RJCcdtOCLakjkfnjovG33sIpZnV1IY7ERNcTIPXuA/edit?usp=sharing'
+    - 'recording |'
   points:
-    - Recording and editing setup
-    - Using a DAW
-    - Demo reels
+    - 'Recording and editing setup'
+    - 'Using a DAW'
+    - 'Demo reels'
   assignment:
-    - Practice with editing software
+    - 'Practice with editing software'
   resources:
-    - voicereels.com/scripts | https://www.voicereels.com/scripts/
+    - 'voicereels.com/scripts | https://www.voicereels.com/scripts/'
 
 - week: 9
   date: "11/9"
   topic: Voice and Technology
   materials:
-  - slides | https://docs.google.com/presentation/d/1Mmhfu86UTpCEaissM-KJNXhxNQrZgKFABZeKcEdSk3k/edit?usp=sharing
-  - recording |
+  - 'slides | https://docs.google.com/presentation/d/1Mmhfu86UTpCEaissM-KJNXhxNQrZgKFABZeKcEdSk3k/edit?usp=sharing'
+  - 'recording |'
   points:
-    - Speech synthesis
-    - Vocaloid
-    - Vocoders, auto-tune, and other tools
-    - Voice tech and ethics
+    - 'Speech synthesis'
+    - 'Vocaloid'
+    - 'Vocoders, auto-tune, and other tools'
+    - 'Voice tech and ethics'
   assignment:
-    - Final project released
-    - DeCal Facilitator Application released | https://forms.gle/qg32SHT2WmMw9Gzz8
+    - 'Final project released'
+    - 'DeCal Facilitator Application released | https://forms.gle/qg32SHT2WmMw9Gzz8'
   resources:
     - 'Synthet: "the sound that everyone loves" | https://www.youtube.com/watch?v=KwdS01evoLk'
     - 'Tom Scott: "How Auto-Tune Works" | https://www.youtube.com/watch?v=i09V6SkVkz8'
     - 'Tech Tangents: "DECTalk DTC01 - 1984 Speech Synthesizer" | https://youtu.be/JGpf6B8EvVY?si=SGXlyhFXRgYT2bQf'
-    - Stephen Hawking's voice | https://bigthink.com/high-culture/this-mit-scientist-gave-his-voice-to-stephen-hawking/
-    - Vocal Tract Lab | https://www.vocaltractlab.de/
+    - 'Stephen Hawking''s voice | https://bigthink.com/high-culture/this-mit-scientist-gave-his-voice-to-stephen-hawking/'
+    - 'Vocal Tract Lab | https://www.vocaltractlab.de/'
 
 
 - week: 10
   date: "11/16"
   topic: Guest Lecture (Jana)
   points:
-    - "Focus: vocal health, vocal gender, voice training"
+    - 'Focus: vocal health, vocal gender, voice training'
   assignment:
-    - Work on final project!
+    - 'Work on final project!'
   resources:
-    - Voice Disorders Simulations | https://slpsims.csd.wisc.edu/simulations.html
-    - adult pharynx 3D models | https://www.visiblebody.com/blog/anatomy-and-physiology-the-pharynx-and-epiglottis
-    - infant pharynx 3D model | https://www.mdpi.com/2694-2526/48/1/4
+    - 'Voice Disorders Simulations | https://slpsims.csd.wisc.edu/simulations.html'
+    - 'adult pharynx 3D models | https://www.visiblebody.com/blog/anatomy-and-physiology-the-pharynx-and-epiglottis'
+    - 'infant pharynx 3D model | https://www.mdpi.com/2694-2526/48/1/4'
 
 - week: 11
   date: "11/23"
   topic: Guest Lecture (Zach)
   points:
-    - "Focus: industry, voice acting"
+    - 'Focus: industry, voice acting'
   assignment:
-    - Work on final project!
+    - 'Work on final project!'
 
 
 - week: 12
   date: "11/30"
   topic: Lab Tour or Guest Lecture
   points:
-    - "Focus: speech research"
+    - 'Focus: speech research'
   assignment:
-    - Work on final project!
+    - 'Work on final project!'
